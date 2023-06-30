@@ -30,10 +30,10 @@ export default function Navhom() {
         <div>
         <div className='bck'>
             <nav>
-                <a className='a1' href='http://bpulau.mrsm.edu.my/'><img src ={image1} className='qries'/> MRSM Balik Pulau</a>
-                <a className='contact a2' onClick={handleLinkClickC}>Contact Us</a>
-                <a className ='a2' onClick={()=>navigate("/Register")}>Register</a>  
-                <a className ='a2' onClick={handleLinkClick}>Activity</a>
+                <a className='a1' href='http://bpulau.mrsm.edu.my/'><img src ={image1} className='qries'alt=''/> MRSM Balik Pulau</a>
+                <button className='contact' onClick={handleLinkClickC}>Contact Us</button>
+                <button className ='a2' onClick={()=>navigate("/Register")}>Register</button>  
+                <button className ='a2' onClick={handleLinkClick}>Activity</button>
                 
             </nav>
             {isMenuOpen && <PopupActivity onClose={handleClose} />}

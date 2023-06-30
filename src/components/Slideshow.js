@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback} from 'react';
 import image1 from  '../asset/6.png'
 import image2 from  '../asset/2.png'
 import image3 from  '../asset/3.png'
@@ -17,10 +17,9 @@ const Slideshow = () => {
       image5
     ];
   
-    const handleNextSlide = () => {
+    const handleNextSlide = useCallback(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      
-    };
+    }, [images.length]);
     
     const handlePrevSlide = () => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
@@ -32,14 +31,14 @@ const Slideshow = () => {
       }, 2000); // Adjust the interval duration (in milliseconds) as needed
       
       return () => clearInterval(interval);
-    }, []);
+    }, [handleNextSlide]);
     
     return (
         
       <div className="slideshow">
       
         <div className="slide-container">
-          <img src={images[currentIndex]} alt="Slideshow Image" className="slide-image" />
+          <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="slide-image" />
           
           <button className="prev-button" onClick={handlePrevSlide}>Previous</button>
           <button className="next-button" onClick={handleNextSlide}>Next</button>

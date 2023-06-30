@@ -15,6 +15,10 @@
     color: aliceblue;
     padding: 14px 16px;
     border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    transition: .2s ease-in-out 0s;
+    margin: 10px;
     
 }
 .qries{
@@ -26,9 +30,24 @@
     background-color: #282828;
     border-radius: 10px;
     color: #FFCE08;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: .2s ease-in-out 0s;
+    margin: 10px;
     
 }
+.contact:hover{
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+}
 .a2{
+    background-color: transparent;
     color: aliceblue;
     float: right;
     text-align: center;
@@ -36,7 +55,20 @@
     text-decoration: none;
     font-size: 20px;
     border-radius: 10px;
+    border: none;
+    transition: .2s ease-in-out 0s;
+    margin: 10px;
     
+}
+.a1:hover{
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+}
+.a2:hover{
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
 }
 nav{
    

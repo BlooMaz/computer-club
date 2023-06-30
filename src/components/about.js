@@ -7,9 +7,9 @@ export default function about() {
     return(
         <div>
             <div className='containerAbout'>
-            <img src ={img1} className='containerA1'/>
-            <img src ={img2} className='containerA2'/>
-            <img src ={img3} className='containerA3'/>
+            <img src ={img1} alt='' className='containerA1'/>
+            <img src ={img2} alt='' className='containerA2'/>
+            <img src ={img3} alt='' className='containerA3'/>
             </div>
             <div className='wordAbout'>
             <h1 className='hd1' >ABOUT</h1>

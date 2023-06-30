@@ -73,7 +73,7 @@ const Register = () => {
 
   return (
     <div>
-      <button className='button-home-form' onClick={()=>navigate("/Home")}><img src={imgicon}/></button>
+      <button className='button-home-form' onClick={()=>navigate("/Home")}><img src={imgicon} alt=''/></button>
       <div className='container1'>
         <h1>Register</h1>
         <form onSubmit={handleSubmit} action=''>
@@ -122,9 +122,6 @@ const Register = () => {
           <input type='checkbox' id='interest-hacking' name='interests' value='hacking' />
           <label htmlFor='interest-hacking' className='check'>Hacking</label>
 
-          <input type='checkbox' id='interest-software-dev' name='interests' value='software-development' />
-          <label htmlFor='interest-software-dev' className='check'>Software Development</label><br/>
-
           <input type='checkbox' id='interest-hackathon' name='interests' value='hackathon' />
           <label htmlFor='interest-hackathon' className='check'>Hackathon</label><br/>
 
@@ -133,6 +130,9 @@ const Register = () => {
 
           <input type='checkbox' id='interest-research' name='interests' value='researching' />
           <label htmlFor='interest-research' className='check'>Researching</label><br/>
+
+          <input type='checkbox' id='interest-software-dev' name='interests' value='software-development' />
+          <label htmlFor='interest-software-dev' className='check'>Software Development</label><br/>
 
           <input type='checkbox' id='interest-optimizing' name='interests' value='optimizing' />
           <label htmlFor='interest-optimizing' className='check'>Optimizing</label><br/>
