@@ -1,43 +1,39 @@
 .popup-menu {
-    position: absolute;
-    top: 80px; /* Adjust the top position as needed */
-    left: 0;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 5px;
-    right: 120px;
-    width: auto;
-    height: auto;
-    background-image: url('../asset/close.png');
-    border: none;
-    cursor: pointer;
-    background-size: cover;
-    background-color: aliceblue;
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius: 100%;
-  }
-.close-button:hover{
+  position: absolute;
+  top: 8vh;
+  left: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 2vh;
+  right: 5vw;
+  width: 2vw;
+  height: 2vw;
+  background-image: url('../asset/close.png');
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  background-color: aliceblue;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+
+.close-button:hover {
   transform: scale(1.1);
   filter: brightness(90%);
 }
 
-.contact-container{
+.contact-container {
   background-color: aliceblue;
-  padding: 20px;
+  padding: 2vh;
   border-radius: 5px;
-  max-width: 400px;
+  max-width: 40vw;
   text-align: center;
-
 }
 
 .popup-menu-contact {
-
   position: fixed;
   top: 0;
   left: 0;
@@ -47,59 +43,62 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  }
-  .close-button-contact {
-    position: absolute;
-    top: 250px;
-    right: 670px;
-    width: auto;
-    height: auto;
-    background-image: url('../asset/close.png');
-    border: none;
-    cursor: pointer;
-    background-size: cover;
-    background-color: aliceblue;
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius: 100%;
-  }
-  .close-button-contact:hover{
-    transform: scale(1.1);
-    filter: brightness(90%);
-  }
-  .close-button-contact::before,
-  .close-button-contact::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 15px;
-    height: 2px;
-    background-color: #333;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  
-  .close-button-contact::after {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
+}
 
-.headingContact{
-  font-size: 20px;
-  font-weight:300;
-  color: #282828;
-  margin-bottom: 20px;
+.close-button-contact {
+  position: absolute;
+  top: 19vh;
+  right: 39vw;
+  width: 2vw;
+  height: 2vw;
+  background-image: url('../asset/close.png');
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  background-color: aliceblue;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
 }
+
+.close-button-contact:hover {
+  transform: scale(1.1);
+  filter: brightness(90%);
+}
+
+.close-button-contact::before,
+.close-button-contact::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.5vw;
+  height: 0.2vw;
+  background-color: #333;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close-button-contact::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.headingContact {
+  font-size: 2vw;
+  font-weight: 300;
+  color: #282828;
+  margin-bottom: 2vh;
+}
+
 .contact-container div {
-  margin-bottom: 15px;
+  margin-bottom: 1.5vh;
 }
-h2{
-  font-size: 18px;
+
+h2 {
+  font-size: 1.8vw;
   color: #282828;
 }
-p{
+
+p {
   font-weight: 300;
   color: #777;
 }

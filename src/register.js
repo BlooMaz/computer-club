@@ -73,9 +73,9 @@ const Register = () => {
 
   return (
     <div>
-      <button className='button-home-form' onClick={()=>navigate("/Home")}><img src={imgicon} alt=''/></button>
+      
       <div className='container1'>
-        <h1>Register</h1>
+        <h1><button className='button-home-form' onClick={()=>navigate("/Home")}><img src={imgicon} alt=''/></button>Register</h1>
         <form onSubmit={handleSubmit} action=''>
           <label htmlFor='name'>Name</label>
           <input type='text' id='name' name='name' maxLength='50' required /><br/><br/>

@@ -1,6 +1,6 @@
 .container1{
     
-    max-width: 400px;
+  max-width: 400px;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -101,21 +101,16 @@ input[type='checkbox']:hover{
     font-weight: bold;
   }
 .button-home-form{
-position:absolute;
+
 display: block;
 background-color: #282828;
-left: 32%;
-top: 9%;
-color: #FFCE08;
 border: none;
-padding: 10px 20px;
-font-size: 20px;
 cursor: pointer;
-margin: 10px;
-border-radius: 10px;
+
+border-radius: 50%;
 text-align: center;
 align-items: center;
-padding: 10px;
+padding: 5%;
 }
 .button-home-form:hover{
     transform: scale(1.1);

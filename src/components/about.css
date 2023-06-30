@@ -2,7 +2,9 @@
     width: auto;
     height: auto;
     position: relative;
-    margin :50px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: center;
 }
 .containerA1{
     border-radius: 10px;
