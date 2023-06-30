@@ -5,8 +5,8 @@ import img3 from '../asset/about3.png'
 export default function about() {
     
     return(
-        <div>
-            <div className='containerAbout'>
+        <div className='containerAbout'>
+            <div >
             <img src ={img1} alt='' className='containerA1'/>
             <img src ={img2} alt='' className='containerA2'/>
             <img src ={img3} alt='' className='containerA3'/>
