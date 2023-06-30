@@ -21,7 +21,7 @@ const PopupContact =({onClose})=>{
                 </div>
                 <div>
                     <h2>Linkedin</h2>
-                    <a className='linkedin' href='linkedin.com/in/muhammad-muaz-bin-rusman'>linkedin.com/in/muhammad-muaz-bin-rusman</a>
+                    <a className='linkedin' href='https://www.linkedin.com/in/muhammad-muaz-bin-rusman-36135325b/'>linkedin.com/in/muhammad-muaz-bin-rusman</a>
                 </div>
 
             </div>
