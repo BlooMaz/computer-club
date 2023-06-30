@@ -15,7 +15,7 @@ class App extends Component {
             <Route index element={<Home />}/>
             <Route path='/Home' element={<Home />}/>
             <Route path='/Register' element={<Register />}/>
-            <Route path="/confirmation" component={RegisterConfirmation} />
+            <Route path="/confirmation" element={<RegisterConfirmation/>} />
         </Routes>
       </BrowserRouter>    
       </div>

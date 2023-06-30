@@ -8,7 +8,7 @@ const Register = () => {
   const navigate = useNavigate();
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
   const numphoneInput = useRef(null);
-
+  const form =document.querySelector("form");
   
     
   
@@ -23,8 +23,11 @@ const Register = () => {
     return ageRegex.test(age);
   };
 
-  const handleSubmit = async(event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
+    const formData = new FormData(event.target);
+    
+    const urlEncoded = new URLSearchParams(formData).toString();
 
     const nameInput = document.getElementById('name');
     const passwordInput = document.getElementById('password');
@@ -36,6 +39,13 @@ const Register = () => {
     const numphoneInputValue = numphoneInput.current.value;
 
     if (
+      !nameInput ||
+    !passwordInput ||
+    !addressInput ||
+    !genderInput ||
+    !emailInput ||
+    !ageInput ||
+    !numphoneInputValue ||
       nameInput.value.trim() === '' ||
       passwordInput.value.trim() === '' ||
       addressInput.value.trim() === '' ||
@@ -49,26 +59,77 @@ const Register = () => {
       errorElement.style.display = 'block';
     } else {
       errorElement.style.display = 'none';
+
+      const name = formData.get('name');
+      const IC = formData.get('IC');
+      const username = formData.get('username');
+      const password = formData.get('password');
+      const address = formData.get('address');
+      const gender = formData.get('gender');
+      const email = formData.get('email');
+      const classValue = formData.get('class');
+      const age = formData.get('age');
+      const numphone = formData.get('numphone');
+
+      console.log(name);
+      console.log(IC);
+      console.log(username);
+      console.log(password);
+      console.log(address);
+      console.log(gender);
+      console.log(email);
+      console.log(classValue);
+      console.log(age);
+      console.log(numphone);
       
     }
 
     const checkboxes = document.getElementsByName('interests');
     let checked = false;
-
+    var interestschecked=[];
     for (let i = 0; i < checkboxes.length; i++) {
       if (checkboxes[i].checked) {
         checked = true;
         setRegistrationSuccess(true); // Set registration success status
-        break;
+        interestschecked[i]=checkboxes[i].value;
+        
       }
     }
-
+    
+    for(let j=0;j<interestschecked.length;j++){
+      var filtered = interestschecked.filter(elm => elm);
+    console.log(filtered[j]);
+    }
     if (!checked) {
       alert('Please select at least one interest.');
       return false;
     }
     
-    return true;
+
+  fetch('http://localhost:5000/process', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: urlEncoded,
+    
+  })
+    .then((response) => {
+      if (response.ok) {
+        // Form submission successfu
+        // Handle the response if needed
+        console.log('Registration successful!');
+      } else {
+        // Form submission failed
+        // Handle the error response if needed
+        console.error('Registration failed.');
+      }
+    })
+    .catch((error) => {
+      // Network error or other issues
+      // Handle the error if needed
+      console.error('An error occurred:', error);
+    });
   };
 
   return (
@@ -76,7 +137,8 @@ const Register = () => {
       
       <div className='container1'>
         <h1><button className='button-home-form' onClick={()=>navigate("/Home")}><img src={imgicon} alt=''/></button>Register</h1>
-        <form onSubmit={handleSubmit} action=''>
+
+        <form onSubmit={handleSubmit} method='post' action='http://localhost:5000/process' encType="multipart/form-data" >
           <label htmlFor='name'>Name</label>
           <input type='text' id='name' name='name' maxLength='50' required /><br/><br/>
 
