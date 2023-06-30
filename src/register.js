@@ -8,7 +8,7 @@ const Register = () => {
   const navigate = useNavigate();
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
   const numphoneInput = useRef(null);
-  const form =document.querySelector("form");
+  
   
     
   
