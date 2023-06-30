@@ -6,7 +6,7 @@ const PopupContact =({onClose})=>{
     return(
         <div className='popup-menu-contact'>
             <div className='contact-container'>
-                <h1 className='headingContact'>Get In Touch With Us!</h1>
+            <button className='close-button-contact' onClick={onClose}></button><h1 className='headingContact'>Get In Touch With Us!</h1>
                 <div>
                     <h2>E-Mail</h2>
                     <p>muhdmuaz121@gmail.com</p>
@@ -25,7 +25,7 @@ const PopupContact =({onClose})=>{
                 </div>
 
             </div>
-            <button className='close-button-contact' onClick={onClose}></button>
+            
             
         </div>
     )

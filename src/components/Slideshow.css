@@ -1,7 +1,7 @@
 .slideshow {
     
     max-width: 80%;
-    margin: auto;
+    margin: 10% 0 10% 10%;
     
 
   }
@@ -32,10 +32,10 @@
     border: none;
     color: transparent;
     font-size: 20px;
-    padding: 20px;
+    padding: 20%;
     border-radius: 20px;
-    height: 300px;
-    padding: 100px;
+    height: 5%;
+    padding: 5%;
   }
   
   .prev-button {

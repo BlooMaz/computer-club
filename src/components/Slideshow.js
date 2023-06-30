@@ -38,6 +38,7 @@ const Slideshow = () => {
       <div className="slideshow">
       
         <div className="slide-container">
+          
           <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="slide-image" />
           
           <button className="prev-button" onClick={handlePrevSlide}>Previous</button>
