@@ -1,0 +1,64 @@
+.containerAbout{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin :50px;
+}
+.containerA1{
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    float: left;
+    transition: transform 0.3s ease-in-out;
+
+}
+.containerA1:hover{
+    transform: scale(1.1);
+    filter:brightness(90%)
+}
+.containerA2{
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    float: left;
+    transition: transform 0.3s ease-in-out;
+
+}
+.containerA2:hover{
+    transform: scale(1.1);
+    filter:brightness(90%)
+}
+.containerA3{
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    float: left;
+    transition: transform 0.3s ease-in-out;
+
+}
+.containerA3:hover{
+    transform: scale(1.1);
+    filter:brightness(90%)
+}
+
+.wordAbout{
+    float:left;
+    color: #FFCE08;
+    font-family: Georgia, serif;
+    margin: 20px;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.wordAbout p{
+    color: aliceblue;
+    font-weight: normal;
+    font-size: 20px;
+}
+.hd1{
+    color: #FFCE08;
+}

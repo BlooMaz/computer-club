@@ -1,0 +1,123 @@
+.container1{
+    
+    max-width: 400px;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+    
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+    color: #282828;
+}
+.container1 form {
+    margin-top: 20px;
+  }
+
+
+label {
+    display: inline-block;
+    width: 120px; /* Adjust the width as needed */
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #282828;
+}
+
+.labelradio {
+    display: inline-block;
+    width: 30px;
+    padding-right: 10px;
+}
+
+  
+input[type='text'] {
+    width: 200px; /* Adjust the width as needed */
+    border-radius: 10px;
+    overflow: hidden;
+}
+input[type='password'] {
+    width: 200px; /* Adjust the width as needed */
+    border-radius: 10px;
+    overflow: hidden;
+}
+textarea{
+    width: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;}
+
+    input[type='tel'] {
+        width: 200px; /* Adjust the width as needed */
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+.check{
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding:10px;
+    margin-right: 50px;
+}
+input[type='checkbox']{
+    margin-left: auto;
+}
+input[type='checkbox']:hover{
+    transform: scale(1.1);
+}
+
+.container1 input[type="submit"],
+.container1 input[type="reset"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 10px;
+}
+.container1 input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+
+.container1 input[type="reset"]:hover{
+    transform: scale(1.1);
+}
+
+.container1 p#error {
+    color: red;
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+.button-home-form{
+position:absolute;
+display: block;
+background-color: #282828;
+left: 32%;
+top: 9%;
+color: #FFCE08;
+border: none;
+padding: 10px 20px;
+font-size: 20px;
+cursor: pointer;
+margin: 10px;
+border-radius: 10px;
+text-align: center;
+align-items: center;
+padding: 10px;
+}
+.button-home-form:hover{
+    transform: scale(1.1);
+    filter:brightness(90%)
+}
