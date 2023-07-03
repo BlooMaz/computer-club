@@ -1,5 +1,5 @@
 .bck {
-    background-image: url("../asset/homenav.png");
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -9,7 +9,36 @@
     padding: 1.5vw;
     box-shadow: 1vw;
 }
-
+.contaierimg{
+    padding: 1%;
+    margin: auto;
+    margin-top: 5%;
+    align-items: center;
+}
+.contaierimg p{
+    color: #282828;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 3vw;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+.hackerimg{
+    border-color: aliceblue;
+    border-radius: 0%;
+    border: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+    width: 40vw;
+    max-height: 600px;
+    max-width: 600px;
+    
+    
+}
 .a1 {
     font-size: 2vw;
     float: left;
