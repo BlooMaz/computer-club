@@ -1,5 +1,27 @@
 body{
   background-color: #0C0032;
   font-family: 'Roboto', sans-serif;
+  z-index: 1;
+}
+.circle1{
+  position: absolute;
+  right: 70%;
+  height: 70%;
+  width: 80%;
+  background-color: #220486;
+  border-radius: 100%;
+  z-index: -1;
+  opacity: 80%;
 }
 
+.circle2{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  height: 70%;
+  width: 80%;
+  background-color: #220486;
+  border-radius: 100%;
+  z-index: -1;
+  opacity: 80%;
+}
