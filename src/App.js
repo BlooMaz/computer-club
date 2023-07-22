@@ -4,6 +4,8 @@ import Register from './register'
 import Home from './home'
 import RegisterConfirmation from './RegisterConfirmation'
 import { BrowserRouter, Routes ,Route } from 'react-router-dom'
+import SearchStudent from './searchStudent'
+import UpdateStudent from './UpdateStudent'
 
 
 class App extends Component {
@@ -18,6 +20,8 @@ class App extends Component {
             <Route path='/Home' element={<Home />}/>
             <Route path='/Register' element={<Register />}/>
             <Route path="/confirmation" element={<RegisterConfirmation/>} />
+            <Route path="/search" element={<SearchStudent/>} />
+            <Route path="/update" element={<UpdateStudent/>} />
         </Routes>
       </BrowserRouter>    
       </div>

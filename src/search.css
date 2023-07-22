@@ -1,0 +1,45 @@
+.container-search{
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 20px;
+    width: auto;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+.container-search button1{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+.infobox{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    padding: 10px;
+    margin-left: auto;
+}
+
+.container-search h1{
+    font-size: 34px;
+    margin: 10px;
+}
+.container-search p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+input[type="text"] {
+    font-size: 20px; /* Adjust the font size as per your preference */
+  }

@@ -155,11 +155,11 @@ const Register = () => {
           <textarea id='address' name='address' rows={4} required /><br/><br/>
 
           <label>Gender</label>
-          <input type='radio' id='male' name='gender' required />
-          <label htmlFor='male' className='labelradio'>Male</label>
+          <input type='radio' id='male' name='gender' required value='Male' />
+          <label htmlFor='male' className='labelradio' >Male</label>
 
-          <input type='radio' id='female' name='gender' required />
-          <label htmlFor='female' className='labelradio'>Female</label>
+          <input type='radio' id='female' name='gender' required value='Female' />
+          <label htmlFor='female' className='labelradio' >Female</label>
 
           <br/><br/>
 

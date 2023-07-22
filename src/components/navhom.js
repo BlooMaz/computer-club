@@ -33,7 +33,9 @@ export default function Navhom() {
             <nav>
                 <a className='a1' href='http://bpulau.mrsm.edu.my/'><img src ={image1} className='qries'alt=''/> MRSM Balik Pulau</a>
                 <button className='contact' onClick={handleLinkClickC}>Contact Us</button>
-                <button className ='a2' onClick={()=>navigate("/Register")}>Register</button>  
+                <button className ='a2' onClick={()=>navigate("/Register")}>Register</button> 
+                <button className ='a2' onClick={()=>navigate("/confirmation")}>Student List</button>   
+                <button className ='a2' onClick={()=>navigate("/search")}>Search</button>  
                 <button className ='a2' onClick={handleLinkClick}>Activity</button>
                 <div className='contaierimg'>
                   <p>Computer Club</p>
